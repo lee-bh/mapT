@@ -20,13 +20,281 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
  
 // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
 var positions = [
-    {
+  {
 content: '<div>주식회사 필경</div>',
-latlng: new kakao.maps.LatLng(33.450701, 126.570667)
+latlng: new kakao.maps.LatLng(37.54632604,126.9543406)
 },
 {
 content: '<div>(주)세정신문사</div>',
-latlng: new kakao.maps.LatLng(33.450701, 126.570667)
+latlng: new kakao.maps.LatLng(37.5564945,126.9226317)
+},
+{
+content: '<div>대양인쇄사</div>',
+latlng: new kakao.maps.LatLng(37.54823341,126.9560255)
+},
+{
+content: '<div>동우문화사</div>',
+latlng: new kakao.maps.LatLng(37.54093793,126.9530682)
+},
+{
+content: '<div>동명인쇄공사</div>',
+latlng: new kakao.maps.LatLng(37.54886718,126.9558957)
+},
+{
+content: '<div>우리인쇄사</div>',
+latlng: new kakao.maps.LatLng(37.55287365,126.9464479)
+},
+{
+content: '<div>정화인쇄지기공업사</div>',
+latlng: new kakao.maps.LatLng(37.54901857,126.9560057)
+},
+{
+content: '<div>만리사</div>',
+latlng: new kakao.maps.LatLng(37.54524817,126.9321949)
+},
+{
+content: '<div>삼광인쇄사</div>',
+latlng: new kakao.maps.LatLng(37.55832637,126.9166487)
+},
+{
+content: '<div>동화인쇄공사</div>',
+latlng: new kakao.maps.LatLng(37.54865068,126.943061)
+},
+{
+content: '<div>삼신문화사</div>',
+latlng: new kakao.maps.LatLng(37.54460354,126.9466456)
+},
+{
+content: '<div>대정인쇄공사</div>',
+latlng: new kakao.maps.LatLng(37.55248811,126.9116944)
+},
+{
+content: '<div>계림인쇄사</div>',
+latlng: new kakao.maps.LatLng(37.54509964,126.9457625)
+},
+{
+content: '<div>태광문화사</div>',
+latlng: new kakao.maps.LatLng(37.5500512,126.924047)
+},
+{
+content: '<div>대덕문화사</div>',
+latlng: new kakao.maps.LatLng(37.54326821,126.9473248)
+},
+{
+content: '<div>서강총업사</div>',
+latlng: new kakao.maps.LatLng(37.5550429,126.9172588)
+},
+{
+content: '<div>(주)옴니피앤디</div>',
+latlng: new kakao.maps.LatLng(37.54703905,126.9565005)
+},
+{
+content: '<div>대신문화사</div>',
+latlng: new kakao.maps.LatLng(37.54333355,126.9309465)
+},
+{
+content: '<div>한양기업</div>',
+latlng: new kakao.maps.LatLng(37.55896938,126.9227726)
+},
+{
+content: '<div>홍익엠앤비</div>',
+latlng: new kakao.maps.LatLng(37.5539549,126.9283991)
+},
+{
+content: '<div>상지사</div>',
+latlng: new kakao.maps.LatLng(37.55249779,126.9344098)
+},
+{
+content: '<div>주-프린트피아</div>',
+latlng: new kakao.maps.LatLng(37.55298237,126.9557766)
+},
+{
+content: '<div>한일상사</div>',
+latlng: new kakao.maps.LatLng(37.55042851,126.9368686)
+},
+{
+content: '<div>이화정밀인쇄（주）</div>',
+latlng: new kakao.maps.LatLng(37.54725901,126.9401648)
+},
+{
+content: '<div>엠오디그래픽스</div>',
+latlng: new kakao.maps.LatLng(37.55527684,126.9142256)
+},
+{
+content: '<div>한겨레신문(주)</div>',
+latlng: new kakao.maps.LatLng(37.54702489,126.9588135)
+},
+{
+content: '<div>대경기획</div>',
+latlng: new kakao.maps.LatLng(37.54333355,126.9309465)
+},
+{
+content: '<div>메카</div>',
+latlng: new kakao.maps.LatLng(37.54965509,126.9090952)
+},
+{
+content: '<div>청아아트</div>',
+latlng: new kakao.maps.LatLng(37.54199422,126.9452047)
+},
+{
+content: '<div>주-파코디자인</div>',
+latlng: new kakao.maps.LatLng(37.55414811,126.9296777)
+},
+{
+content: '<div>태성인쇄</div>',
+latlng: new kakao.maps.LatLng(37.56072091,126.9040755)
+},
+{
+content: '<div>신아기획인쇄</div>',
+latlng: new kakao.maps.LatLng(37.54225992,126.9478154)
+},
+{
+content: '<div>하이콤</div>',
+latlng: new kakao.maps.LatLng(37.55510436,126.9176234)
+},
+{
+content: '<div>정문사문화(주)</div>',
+latlng: new kakao.maps.LatLng(37.55811275,126.9206209)
+},
+{
+content: '<div>은솔기획</div>',
+latlng: new kakao.maps.LatLng(37.54696019,126.9424849)
+},
+{
+content: '<div>아주인쇄(주)</div>',
+latlng: new kakao.maps.LatLng(37.54865068,126.943061)
+},
+{
+content: '<div>옥천D&P</div>',
+latlng: new kakao.maps.LatLng(37.547654,126.9562172)
+},
+{
+content: '<div>내외프린팅</div>',
+latlng: new kakao.maps.LatLng(37.55576629,126.8997306)
+},
+{
+content: '<div>주식회사 에스비에이드</div>',
+latlng: new kakao.maps.LatLng(37.54975283,126.9581272)
+},
+{
+content: '<div>(주)동랑</div>',
+latlng: new kakao.maps.LatLng(37.54300073,126.9493778)
+},
+{
+content: '<div>성신인쇄사</div>',
+latlng: new kakao.maps.LatLng(37.54264236,126.9505782)
+},
+{
+content: '<div>CUBE(큐브)</div>',
+latlng: new kakao.maps.LatLng(37.56236709,126.9203799)
+},
+{
+content: '<div>포유그라픽스</div>',
+latlng: new kakao.maps.LatLng(37.55195009,126.9222996)
+},
+{
+content: '<div>민하디지탈아트</div>',
+latlng: new kakao.maps.LatLng(37.54785708,126.9415414)
+},
+{
+content: '<div>(주)동랑커뮤니케이션즈</div>',
+latlng: new kakao.maps.LatLng(37.54255754,126.9473725)
+},
+{
+content: '<div>(주)다큐멘테크</div>',
+latlng: new kakao.maps.LatLng(37.55855628,126.9189276)
+},
+{
+content: '<div>대한커뮤니케이션즈</div>',
+latlng: new kakao.maps.LatLng(37.55549995,126.9301075)
+},
+{
+content: '<div>신화종합인쇄</div>',
+latlng: new kakao.maps.LatLng(37.55335917,126.9345335)
+},
+{
+content: '<div>COTRANS</div>',
+latlng: new kakao.maps.LatLng(37.54734554,126.913428)
+},
+{
+content: '<div>(주)비사트코리아</div>',
+latlng: new kakao.maps.LatLng(37.54532124,126.9226358)
+},
+{
+content: '<div>블루프린팅</div>',
+latlng: new kakao.maps.LatLng(37.54768454,126.9554897)
+},
+{
+content: '<div>대성프린팅</div>',
+latlng: new kakao.maps.LatLng(37.54768454,126.9554897)
+},
+{
+content: '<div>금강미디어공동체</div>',
+latlng: new kakao.maps.LatLng(37.55520894,126.9200808)
+},
+{
+content: '<div>(주)리얼그라피</div>',
+latlng: new kakao.maps.LatLng(37.57647652,126.8969986)
+},
+{
+content: '<div>동우문화 주식회사</div>',
+latlng: new kakao.maps.LatLng(37.54093793,126.9530682)
+},
+{
+content: '<div>희수컴</div>',
+latlng: new kakao.maps.LatLng(37.55463251,126.9224862)
+},
+{
+content: '<div>소다프린트</div>',
+latlng: new kakao.maps.LatLng(37.55477816,126.9181885)
+},
+{
+content: '<div>(주)코트랜스인터내셔널</div>',
+latlng: new kakao.maps.LatLng(37.55530377,126.9187625)
+},
+{
+content: '<div>한국사회복지협의회</div>',
+latlng: new kakao.maps.LatLng(37.54399477,126.9528358)
+},
+{
+content: '<div>명진문화</div>',
+latlng: new kakao.maps.LatLng(37.54768454,126.9554897)
+},
+{
+content: '<div>(주)아이엔비인터내셔널</div>',
+latlng: new kakao.maps.LatLng(37.55663266,126.924382)
+},
+{
+content: '<div>예진미술</div>',
+latlng: new kakao.maps.LatLng(37.55145153,126.9184939)
+},
+{
+content: '<div>(주)디자인패러다임</div>',
+latlng: new kakao.maps.LatLng(37.55713613,126.92805)
+},
+{
+content: '<div>미래애드컴</div>',
+latlng: new kakao.maps.LatLng(37.55483424,126.9331828)
+},
+{
+content: '<div>(주)페이지원 컨설팅</div>',
+latlng: new kakao.maps.LatLng(37.55313044,126.9254279)
+},
+{
+content: '<div>가이아앤씨(주)</div>',
+latlng: new kakao.maps.LatLng(37.54300073,126.9493778)
+},
+{
+content: '<div>아름다운기획</div>',
+latlng: new kakao.maps.LatLng(37.54551717,126.9328409)
+},
+{
+content: '<div>(주)다큐멘테크</div>',
+latlng: new kakao.maps.LatLng(37.54830806,126.9121356)
+},
+{
+content: '<div>디자인스토리</div>',
+latlng: new kakao.maps.LatLng(37.55836698,126.9251485)
 }
 
 
